@@ -10,15 +10,10 @@ const Layout = ({ children }) => {
     <div>
       <AppBar />
       <Container textAlign={"right"}>
-        <Link to="/">
-          <Header as="h1" className={h1}>
-            Giteacher
-        </Header>
-        </Link>
         {children}
         <Divider />
         <p className={pullRight}>
-          Made with <Icon name="heart" color="red" />
+          Made with__<Icon name="heart" color="red" />
         </p>
       </Container>
     </div>

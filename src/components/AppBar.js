@@ -35,7 +35,7 @@ function ButtonAppBar(props) {
           </IconButton>
           <div className={classes.flex}></div>
           <Typography variant="title" color="inherit">
-            Giteacher
+            Random Cat
           </Typography>
         </Toolbar>
       </AppBar>
