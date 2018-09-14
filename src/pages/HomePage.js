@@ -5,7 +5,6 @@ import Layout from '../components/Layout';
 import agent from '../agent';
 import { connect } from 'react-redux';
 import Button from '@material-ui/core/Button';
-import SidebarMenu from '../components/Menu';
 
 const Promise = global.Promise;
 
@@ -34,11 +33,10 @@ class HomePage extends React.Component {
     const props = this.props;
     return (
       <div>
-        <SidebarMenu left={props.menuOpen} />
         <Layout>
           <br/>
           <p>
-            <Button onClick={() => this.props.giveMeACat(agent.Cats.cat())} variant="contained" color="secondary">CLICK AND GET A CAT</Button>
+            <Button onClick={() => this.props.giveMeACat(agent.Cats.cat())} variant="contained" color="secondary">Get A Random Cat!</Button>
           </p>
           <img src={props.cat} />
         </Layout>
