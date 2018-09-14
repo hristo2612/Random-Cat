@@ -10,7 +10,8 @@
     "prebuild": "rimraf build",
     "build": "cross-env NODE_ENV=production webpack -p --env.env=prod",
     "build:bundleanalyzer": "npm run build --env.addons=bundleanalyzer",
-    "predeploy": "npm run prebuild && npm run build"
+    "predeploy": "npm run build",
+    "deploy": "firebase deploy"
   },
   "dependencies": {
     "@material-ui/core": "^3.0.1",
